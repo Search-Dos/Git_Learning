@@ -3,20 +3,20 @@ using namespace std;
 
 int main () {
 	int n,k;
-	cin>>n>>k;
+	cin >> n >> k;
 	int vector[n];
-	for (int i=0; i<n; i++) {
-		cin>>vector[i];
+	for (int i = 0; i < n; i++) {
+		cin >> vector[i];
 	}
-	for (int i=0; i<k; i++) {
+	for (int i = 0; i < k; i++) {
 		int x;
-		cin>> x;
+		cin >> x;
 		int l = 0;
-		int r = n-1;
-		bool ok=false;
+		int r = n - 1;
+		bool ok = false;
 		while (r>=l) {
-			int m = (l+r)/2;
-			if(vector[m]==x){
+			int m = (l + r) / 2;
+			if(vector[m] == x){
 				ok = true;
 				break;
 			}else if(vector[m]<x){
