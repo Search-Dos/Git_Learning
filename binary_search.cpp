@@ -18,19 +18,19 @@ int main () {
 		bool ok = false;
 		while (r>=l) {
 			int m = (l + r) / 2;
-			if(vector[m] == x){
+			if (vector[m] == x){
 				ok = true;
 				break;
-			}else if(vector[m]<x){
+			}else if (vector[m] < x){
 				l = m + 1;
-			}else if(vector[m]>x){
+			}else if (vector[m] > x){
 				r = m - 1;
 			}
 		}
-		if (ok){
-			cout<<"YES\n";
-		}else{
-			cout<<"NO\n";
+		if (ok) {
+			cout << "YES\n";
+		}else {
+			cout << "NO\n";
 		}
 	}
 
