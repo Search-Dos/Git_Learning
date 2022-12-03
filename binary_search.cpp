@@ -17,7 +17,7 @@ int main () {
 		int l = 0;
 		int r = n - 1;
 		bool ok = false;
-		while (r > =l) {
+		while (r >=l) {
 			int m = (l + r) / 2;
 			if (vector[m] == x){
 				ok = true;
