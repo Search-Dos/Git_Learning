@@ -1,10 +1,11 @@
 #include <iostream>
 #include <bits/stdc++.h>
 #include <algorithm>
+
 using namespace std;
 
 int main () {
-	int n,k;
+	int n, k;
 	cin >> n >> k;
 	int vector[n];
 	for (int i = 0; i < n; i++) {
@@ -16,7 +17,7 @@ int main () {
 		int l = 0;
 		int r = n - 1;
 		bool ok = false;
-		while (r>=l) {
+		while (r > =l) {
 			int m = (l + r) / 2;
 			if (vector[m] == x){
 				ok = true;
